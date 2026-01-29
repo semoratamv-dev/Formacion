@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>JS Otros BuclesParaGithub</title>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  </head>
+    
+  <body>
+  <style>
+//*{outline: black solid 1px;}
+html{
+	background-color:white;
+}
+body{
+	border:5px solid blue;
+	border-radius: 20px;
+	background: #2A7B9B;
+background: radial-gradient(circle,rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+}
+h1{
+	color: white;
+	font-family:"Franklin Gothic Medium","Dutch801 XBd BT","Commercial Script BT",sans-serif;
+	text-align:center;
+}
+div{
+	margin:100px 0px;
+	justify-content: center;
+	display:flex;
+	
+	//flex-direction: row;
+	
+}
+button{
+	position:relative;
+	background-color:#F7F779;
+	border-radius: 10px;
+	border-color:black;
+	display:inline;
+	margin:10px;
+	//flex-wrap: grap;
+}
+</style>
+	<body>
+		<h1>Ejercicio otros bucles</h1>
+		<div>
+			<button id="for" onclick="bucleFor()">Bucle FOR</button>
+			<button id="guile" onclick="bucleWhile()">Bucle While</button>
+			<button id="foreach" onclick="bucleForEach()">Bucle ForEach</button>
+		</div>
+<script>
+		const miLista =['🥧','🍔','🥨','🍦','🧁','🍬','🍮','🚠','🪂','🧀','🥩','🍤'];
+let longLista=miLista.length;
+
+// ======= BUCLE FOR =======
+function bucleFor() {
+	console.log("Bucle For ------");
+	for (let i = 0; i < longLista; i++) {
+		console.log(`${i+1}: ${miLista[i]}`);
+	}
+	console.log("Fin de For ------");
+} // fin de Función bucleFor
+
+// ======= BUCLE WHILE =======
+function bucleWhile() {
+	console.log("Bucle while ------");
+	i=0;
+	while (i<longLista) 	{
+		console.log(`${i+1}: ${miLista[i]}`);
+		i++;
+	}
+	console.log("Fin bucle while------");
+} // fin de Función bucleWhile
+
+// ======= BUCLE FOR EACH =======
+function bucleForEach() {
+	console.log("Bucle for each------");
+	miLista.forEach((mLista, index) => {console.log(`${index+1}: ${miLista[index]}`);});
+	console.log("Fin bucle for each------");
+}</script>
+	</body>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
